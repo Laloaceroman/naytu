@@ -52,11 +52,10 @@ app.common = {
     controller = new ScrollMagic.Controller({
       globalSceneOptions: {
         triggerHook: 'onLeave',
-        duration: '100%',
         addIndicators: false
       }
     });
-    slides = document.querySelectorAll('section');
+    slides = document.querySelectorAll('.section--scrolling');
     results = [];
     for (i = j = 0, ref = slides.length; 0 <= ref ? j < ref : j > ref; i = 0 <= ref ? ++j : --j) {
       new ScrollMagic.Scene({
@@ -64,7 +63,7 @@ app.common = {
       }).setPin(slides[i], {
         pushFollowers: false
       }).addTo(controller);
-      if (app.inMobile = false) {
+      if (app.inMobile = true) {
         results.push(controller.enabled(false));
       } else {
         results.push(void 0);
@@ -810,7 +809,7 @@ app.slider = {
           return app.slider.next($(this));
         });
         return play();
-      }, 6000);
+      }, 8000);
     };
     return play();
   }
