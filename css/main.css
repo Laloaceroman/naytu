@@ -4197,9 +4197,6 @@ section.section--clients .section__client {
   -ms-flex-pack: center;
       justify-content: center;
   min-height: 150px;
-  border: 1px solid #172650;
-  max-width: 250px;
-  margin: 0 auto;
 }
 section.section--clients .section__client .section__icon img {
   width: initial;
