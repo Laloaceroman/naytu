@@ -2002,6 +2002,8 @@ footer .footer__banner {
 }
 footer .footer__banner .footer__body {
   border-bottom: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 footer .footer__banner .footer__wrap {
   display: -ms-flexbox;
@@ -2020,6 +2022,10 @@ footer .footer__banner .footer__content {
   color: #fff;
   position: relative;
   z-index: 1;
+}
+footer .footer__banner .footer__image {
+  position: relative;
+  padding-bottom: 54%;
 }
 footer .footer__banner .footer__eff {
   position: absolute;
@@ -4170,6 +4176,36 @@ section.section--team .section__team .cols::-webkit-scrollbar-thumb {
 }
 section.section--team .section__team .cols::-webkit-scrollbar:horizontal {
   height: 10px;
+}
+section.section--clients .section__header {
+  text-align: left;
+  margin-bottom: 80px;
+}
+section.section--clients .section__wrap {
+  padding: 80px 40px;
+  padding-bottom: 0;
+}
+section.section--clients .section__body {
+  padding-bottom: 80px;
+}
+section.section--clients .section__client {
+  padding: 10px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  min-height: 150px;
+  border: 1px solid #172650;
+  max-width: 250px;
+  margin: 0 auto;
+}
+section.section--clients .section__client .section__icon img {
+  width: initial;
+  height: initial;
+  max-width: 160px;
+  max-height: 80px;
 }
 .slider {
   position: relative;
